@@ -8,3 +8,51 @@ html {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
+.span1{
+	max-width: 95px;
+}
+
+.span2{
+	max-width: 190px;
+}
+
+.span3{
+	max-width: 285px;
+}
+
+.span4{
+	max-width: 380px;
+}
+
+.span5{
+	max-width: 475px;
+}
+
+.span6{
+	max-width: 570px;
+}
+
+.span7{
+	max-width: 665px;
+}
+
+.span8{
+	max-width: 760px;
+}
+
+.span9{
+	max-width: 855px;
+}
+
+.span10{
+	max-width: 950px;
+}
+
+.span11{
+	max-width: 1045px;
+}
+
+.span12{
+	max-width: 1140px;
+}
