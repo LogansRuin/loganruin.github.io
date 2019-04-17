@@ -1,7 +1,7 @@
 # Plan for blog
 
 ### What is my site's primary purpose
-My sites primary purpose will be to document plants that I have
+My sites primary purpose will be to document my sweet projects
 
 ### Who is my audience (is it kids, adults, academics)
 Millenials that live in apartments. They are not able to have gardens so they have houseplants instead.
@@ -13,7 +13,7 @@ Millenials use phones as one of their primary devices outside of work, so my web
 
 
 ### What other directories do I need (e.g images). Where do I put that directory?
-Images
-Posts
+images
 
 ### Do I want the style to be applied to your blog entries also?
+Yes at this stage I will stick to one style sheet
