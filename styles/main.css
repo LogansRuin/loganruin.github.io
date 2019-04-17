@@ -11,48 +11,60 @@ html {
 
 .span1 {
 	max-width: 95px;
+	margin: 0 auto;
 }
 
 .span2 {
 	max-width: 190px;
+	margin: 0 auto;
 }
 
 .span3 {
 	max-width: 285px;
+	margin: 0 auto;
 }
 
 .span4 {
 	max-width: 380px;
+	margin: 0 auto;
 }
 
 .span5 {
 	max-width: 475px;
+	margin: 0 auto;
 }
 
 .span6 {
 	max-width: 570px;
+	margin: 0 auto;
 }
 
 .span7 {
 	max-width: 665px;
+	margin: 0 auto;
 }
 
 .span8 {
 	max-width: 760px;
+	margin: 0 auto;
 }
 
 .span9 {
 	max-width: 855px;
+	margin: 0 auto;
 }
 
 .span10 {
 	max-width: 950px;
+	margin: 0 auto;
 }
 
 .span11 {
 	max-width: 1045px;
+	margin: 0 auto;
 }
 
 .span12 {
 	max-width: 1140px;
+	margin: 0 auto;
 }
