@@ -1,70 +1,85 @@
-/*Grid layout*/
-
-html {
+* {
 	box-sizing: border-box;
 }
 
-.container {
-	max-width: 1140px;
-	margin: 0 auto;
-}
+/*Grid layout*/
+	.container {
+		max-width: 1140px;
+		margin: 0 auto;
+	}
 
-.span1 {
-	max-width: 95px;
-	margin: 0 auto;
-}
+	.row {
+		clear: left;
+	}
 
-.span2 {
-	max-width: 190px;
-	margin: 0 auto;
-}
+	.span1 {
+		width: 95px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span3 {
-	max-width: 285px;
-	margin: 0 auto;
-}
+	.span2 {
+		width: 190px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span4 {
-	max-width: 380px;
-	margin: 0 auto;
-}
+	.span3 {
+		width: 285px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span5 {
-	max-width: 475px;
-	margin: 0 auto;
-}
+	.span4 {
+		width: 380px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span6 {
-	max-width: 570px;
-	margin: 0 auto;
-}
+	.span5 {
+		width: 475px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span7 {
-	max-width: 665px;
-	margin: 0 auto;
-}
+	.span6 {
+		width: 570px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span8 {
-	max-width: 760px;
-	margin: 0 auto;
-}
+	.span7 {
+		width: 665px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span9 {
-	max-width: 855px;
-	margin: 0 auto;
-}
+	.span8 {
+		width: 760px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span10 {
-	max-width: 950px;
-	margin: 0 auto;
-}
+	.span9 {
+		width: 855px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span11 {
-	max-width: 1045px;
-	margin: 0 auto;
-}
+	.span10 {
+		width: 950px;
+		margin: 0 auto;
+		float: left;
+	}
 
-.span12 {
-	max-width: 1140px;
-	margin: 0 auto;
-}
+	.span11 {
+		width: 1045px;
+		margin: 0 auto;
+		float: left;
+	}
+
+	.span12 {
+		width: 1140px;
+		margin: 0 auto;
+		float: left;
+	}
