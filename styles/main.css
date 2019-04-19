@@ -7,6 +7,7 @@
 	.container {
 		max-width: 1140px;
 		margin: 0 auto;
+		clear: both;
 	}
 
 	.row {
@@ -15,6 +16,11 @@
 		overflow: auto;
 	}
 	
+	.column{
+		margin: 0 0.877192982%;
+		float: left;
+	}
+
 	.span1 {
 		width: 6.578947368%;
 		margin: 0 0.877192982%;
@@ -86,3 +92,9 @@
 		margin: 0 0.877192982%;
 		float: left;
 	}
+
+/*Universal styles*/
+
+/*Home specific*/
+
+/*Blog Specific*/
