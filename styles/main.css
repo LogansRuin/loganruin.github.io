@@ -94,6 +94,13 @@
 	}
 
 /*Universal styles*/
+	@media only screen and (max-width: 480px){
+		[class^="span"]{
+			float: none;
+			width: 100%;
+			margin-left: 0;
+		}
+	}
 
 /*Home specific*/
 
