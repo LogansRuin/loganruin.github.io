@@ -11,76 +11,156 @@
 
 	.row {
 		clear: left;
+		padding: 10px 0;
+		overflow: auto;
 	}
 
-	.span1 {
-		width: 75px;
-		margin: 0 10px;
-		float: left;
+	@media only screen and (min-width: 1140px){
+		.span1 {
+			width: 75px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span2 {
+			width: 170px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span3 {
+			width: 265px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span4 {
+			width: 360px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span5 {
+			width: 455px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span6 {
+			width: 550px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span7 {
+			width: 645px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span8 {
+			width: 740px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span9 {
+			width: 835px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span10 {
+			width: 930px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span11 {
+			width: 1025px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span12 {
+			width: 1120px;
+			margin: 0 10px;
+			float: left;
+		}
 	}
 
-	.span2 {
-		width: 170px;
-		margin: 0 10px;
-		float: left;
-	}
+	@media only screen and (max-width: 1140px){
+		.span1 {
+			width: 75px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span3 {
-		width: 265px;
-		margin: 0 10px;
-		float: left;
-	}
+		.span2 {
+			width: 170px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span4 {
-		width: 360px;
-		margin: 0 10px;
-		float: left;
-	}
+		.span3 {
+			width: 265px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span5 {
-		width: 455px;
-		margin: 0 10px;
-		float: left;
-	}
+		.span4 {
+			width: 360px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span6 {
-		width: 550px;
-		margin: 0 10px;
-		float: left;
-	}
+		.span5 {
+			width: 455px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span7 {
-		width: 645px;
-		margin: 0 10px;
-		float: left;
-	}
+		.span6 {
+			width: 550px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span8 {
-		width: 740px;
-		margin: 0 10px;
-		float: left;
-	}
+		.span7 {
+			width: 645px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span9 {
-		width: 835px;
-		margin: 0 10px;
-		float: left;
-	}
+		.span8 {
+			width: 740px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span10 {
-		width: 930px;
-		margin: 0 10px;
-		float: left;
-	}
+		.span9 {
+			width: 835px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span11 {
-		width: 1025px;
-		margin: 0 10px;
-		float: left;
-	}
+		.span10 {
+			width: 930px;
+			margin: 0 10px;
+			float: left;
+		}
 
-	.span12 {
-		width: 1120px;
-		margin: 0 10px;
-		float: left;
+		.span11 {
+			min-width: 930px;
+			max-width: 1025px;
+			margin: 0 10px;
+			float: left;
+		}
+
+		.span12 {
+			min-width: 930px;
+			max-width: 1120px;
+			margin: 0 10px;
+			float: left;
+		}
 	}
