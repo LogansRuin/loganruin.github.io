@@ -94,13 +94,15 @@
 	}
 
 /*Universal styles*/
-	@media only screen and (max-width: 480px){
-		[class^="span"]{
-			float: none;
-			width: 100%;
-			margin-left: 0;
+
+	/*Mobile*/
+		@media only screen and (max-width: 480px){
+			[class^="span"]{
+				width: 98%;
+				margin: 1% 1%;
+				float: none;
+			}
 		}
-	}
 
 /*Home specific*/
 
