@@ -165,6 +165,15 @@
 			}
 		}
 
+	/*Typeface*/
+	@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Quicksand:300,400');
+
+	html{
+		font-size: 16px;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 300;
+	}
+
 /*Home specific*/
 
 /*Blog Specific*/
