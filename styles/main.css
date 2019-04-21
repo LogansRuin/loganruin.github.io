@@ -72,6 +72,12 @@
 		clear: both;
 	}
 
+	.full-container {
+		max-width: 100%;
+		margin: 0 auto;
+		clear: both;
+	}
+
 	.row {
 		clear: left;
 		padding: 10px 0;
@@ -173,13 +179,30 @@
 		font-weight: 300;
 	}
 
-	h1#title{
+	#title{
 		font-family: 'Arvo', serif;
-		font-weight: 700;
-		font-size: 6em;
+		color: #EDF5E1;
 		text-align: center;
 	}
 
+	#title>h1{
+		font-weight: 700;
+		font-size: 6rem;
+	}
+	#title>p{
+		font-weight:400;
+		font-size: 2rem;
+		color: #379683;
+	}
+
 /*Home specific*/
+	#title{
+		background-color: #5CDB95;
+		height: 24rem;
+	}
+
+	header#title{
+		padding-top: 9rem;
+	}
 
 /*Blog Specific*/
