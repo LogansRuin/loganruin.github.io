@@ -161,6 +161,15 @@
 		float: left;
 	}
 
+/*Colour variables*/
+	:root{
+		--primary-blue: #05386B; 
+		--sea-water-blue: #379683;
+		--primary-green: #5CDb95;
+		--secondary-green: #8EE4AF;
+		--white-green: #EDF5E1;
+	}
+
 /*Universal styles*/
 
 	/*Mobile*/
@@ -181,7 +190,7 @@
 
 	#title{
 		font-family: 'Arvo', serif;
-		color: #EDF5E1;
+		color: var(--white-green);
 		text-align: center;
 	}
 
@@ -192,17 +201,21 @@
 	#title>p{
 		font-weight:400;
 		font-size: 2rem;
-		color: #379683;
+		color: var(--sea-water-blue);
 	}
 
 /*Home specific*/
 	#title{
-		background-color: #5CDB95;
+		background-color: var(--primary-green);
 		height: 24rem;
 	}
 
 	header#title{
 		padding-top: 9rem;
+	}
+
+	#body{
+
 	}
 
 /*Blog Specific*/
