@@ -232,9 +232,18 @@
 		background-color: var(--white-green);
 	}
 
+	.blog-listing{
+		border-top: 0.3rem solid var(--sea-water-blue);
+		background-color: var(--white-green);
+	}
+
 	.blog-listing>h1{
 		font-size: 2.5rem;
 		color: var(--primary-blue);
+	}
+
+	.blog-listing>img{
+		width: 100%;
 	}
 
 	.subtitle{
