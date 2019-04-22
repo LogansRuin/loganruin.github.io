@@ -188,6 +188,14 @@
 		font-weight: 300;
 	}
 
+	h1, h2, h3, h4, h5, h6{
+		font-family: 'Arvo', serif;
+	}
+
+	p{
+		color: #222;
+	}
+
 	#title{
 		font-family: 'Arvo', serif;
 		color: var(--white-green);
@@ -198,10 +206,16 @@
 		font-weight: 700;
 		font-size: 6rem;
 	}
+
 	#title>p{
 		font-weight:400;
 		font-size: 2rem;
 		color: var(--sea-water-blue);
+	}
+
+	.section-heading{
+		font-size: 2.5rem;
+		color: var(--primary-blue);
 	}
 
 /*Home specific*/
@@ -214,8 +228,23 @@
 		padding-top: 9rem;
 	}
 
-	#body{
+	#main-body{
+		background-color: var(--white-green);
+	}
 
+	.blog-listing>h1{
+		font-size: 2.5rem;
+		color: var(--primary-blue);
+	}
+
+	.subtitle{
+		font-weight: 400;
+		color: var(--sea-water-blue);
+	}
+
+	.subtitle-label{
+		font-weight: 400;
+		color: var(--primary-blue);	
 	}
 
 /*Blog Specific*/
