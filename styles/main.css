@@ -221,7 +221,7 @@
 /*Home specific*/
 	#title{
 		background-color: var(--primary-green);
-		height: 24rem;
+		min-height: 24rem;
 	}
 
 	header#title{
