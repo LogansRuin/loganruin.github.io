@@ -270,13 +270,13 @@
 		border-bottom: 2px solid var(--primary-blue);
 	}
 
-	.blog-listing>h1{
+	.blog-listing>a>h1{
 		margin: 1rem 0 0.5rem 0;
 		font-size: 2.5rem;
 		color: var(--primary-blue);
 	}
 
-	.blog-listing>img{
+	.blog-listing>a>img{
 		width: 100%;
 	}
 
