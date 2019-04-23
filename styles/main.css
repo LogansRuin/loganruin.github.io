@@ -308,4 +308,10 @@
 		margin: auto;
 	}
 
+	@media only screen and (max-width: 480px){
+		
+			header#title{
+				padding-top: 4rem;
+			}
+		}
 /*Blog Specific*/
