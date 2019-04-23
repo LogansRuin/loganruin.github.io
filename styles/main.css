@@ -175,15 +175,6 @@
 
 /*Universal styles*/
 
-	/*Mobile*/
-		@media only screen and (max-width: 480px) or (orientation: portrait){
-			[class^="span"]{
-				width: 98%;
-				margin: 1% 1%;
-				float: none;
-			}
-		}
-
 	/*Typeface*/
 		html{
 			font-size: 16px;
@@ -308,10 +299,17 @@
 		margin: auto;
 	}
 
-	@media only screen and (max-width: 480px) or (orientation: portrait){
-		
-			header#title{
-				padding-top: 4rem;
-			}
-		}
 /*Blog Specific*/
+
+/*Mobile*/
+	@media only screen and (max-width: 480px){
+		[class^="span"]{
+			width: 98%;
+			margin: 1% 1%;
+			float: none;
+		}
+
+		header#title{
+			padding-top: 4rem;
+		}
+	}
