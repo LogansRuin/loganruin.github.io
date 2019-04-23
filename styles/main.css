@@ -231,6 +231,7 @@
 
 	#main-body{
 		background-color: var(--white-green);
+		padding-bottom: 2rem;
 	}
 
 	.blog-listing{
