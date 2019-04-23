@@ -218,7 +218,7 @@
 
 		.section-heading{
 			font-size: 2.5rem;
-			color: var(--primary-blue);
+			color: var(--sea-water-blue);
 		}
 
 /*Home specific*/
@@ -261,11 +261,17 @@
 
 
 	.blog-listing{
-		border-top: 0.3rem solid var(--sea-water-blue);
-		background-color: var(--white-green);
+		border-top: 2px solid var(--sea-water-blue);
+		padding-bottom: 10px;	
+	}
+
+	.blog-listing:hover{
+		border-top: 2px solid var(--primary-blue);
+		border-bottom: 2px solid var(--primary-blue);
 	}
 
 	.blog-listing>h1{
+		margin: 1rem 0 0.5rem 0;
 		font-size: 2.5rem;
 		color: var(--primary-blue);
 	}
