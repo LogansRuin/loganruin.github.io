@@ -4,7 +4,14 @@
 		padding-bottom: 1rem;
 		border-bottom: 2px solid #e7efda;
 	}
+
 /*Content specific*/
+	#inline-vs-block{
+		margin: 1rem 0;
+		padding: 1rem;
+		background-color: #e7efda;
+	}
+
 	#brown-fox{
 		color: brown;
 	
