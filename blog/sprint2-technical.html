@@ -90,18 +90,36 @@
 								</p>
 							</div>
 						</aside>
+						<div id="relative-section">
+							<h2>{ position: relative }</h2>
+							<p>
+								The  first type of positioning we will look at is relative positioning. Relative positioning allows you to position an element on the page, moving it relative to it original static position in the normal flow.
+							</p>
+							<p>
+								To do this you need to first change you position to relative:<br>
+								{ position: relative; }
+							</p>
+							<p>
+								Then you can use the top, right, bottom and left properties to move the element relative to its original position in the normal flow of the HTML file.
+							</p>
+							<p>
+								In the example below if have created a class called relative, that moves the element 300px from the left of the static position, then applied it to one of the inline elements and one of the block elements.
+							</p>
+							
+							<!-- Codepen start -->
+							<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="mgzwyZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Relative Positioning">
+							<span>See the Pen <a href="https://codepen.io/logansruin/pen/mgzwyZ/">
+							Relative Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
+							on <a href="https://codepen.io">CodePen</a>.</span>
+							</p>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+							<!-- Codepen end -->
 
-						<h2>{ position: relative }</h2>
-						<p id="relative"></p>
+							<p>
+								Notice that the elements without class=”relative” applied are still in the same static position unaffected by the change to the elements with relative positioning, even though one of the inline elements now overlaps the other.
+							</p>
+						</div>
 						
-						<!-- Codepen start -->
-						<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="mgzwyZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Relative Positioning">
-						<span>See the Pen <a href="https://codepen.io/logansruin/pen/mgzwyZ/">
-						Relative Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-						</p>
-						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-						<!-- Codepen end -->
 
 						<h2>{ position: absolute }</h2>
 						<p id="absolute"></p>
