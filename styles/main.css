@@ -225,6 +225,19 @@
 			font-weight: 400;
 		}
 
+		a:visited{
+			color: #222;
+		}
+
+		blockquote{
+			border-left: 2px solid var(--sea-water-blue);
+			padding-left: 0.3rem;
+		}
+
+		blockquote>p{
+			font-family: 'Arvo', sans-serif;
+		}
+
 		#title{
 			font-family: 'Arvo', serif;
 			color: var(--white-green);
