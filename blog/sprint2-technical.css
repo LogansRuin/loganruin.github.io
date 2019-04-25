@@ -16,13 +16,12 @@
 		padding: 0.2rem;
 	}
 
-/*Content specific*/
-	#inline-vs-block{
-		margin: 1rem 0;
-		padding: 1rem;
-		background-color: #e7efda;
+	.codepen{
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 
+/*Content specific*/
 	#brown-fox{
 		color: brown;
 	

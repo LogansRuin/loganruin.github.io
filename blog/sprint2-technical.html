@@ -47,15 +47,17 @@
 						</p>
 						
 						<!-- Codepen start -->
-						<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="vMVxXy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Static Positioning">
-						<span>See the Pen <a href="https://codepen.io/logansruin/pen/vMVxXy/">
-						Static Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-						</p>
-						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+						<div class="codepen">
+							<p class="codepen" data-height="325" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="vMVxXy" style="height: 325px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Static Positioning">
+							<span>See the Pen <a href="https://codepen.io/logansruin/pen/vMVxXy/">
+							Static Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
+							on <a href="https://codepen.io">CodePen</a>.</span>
+							</p>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+						</div>
 						<!-- Codepen end -->
 
-						<aside class="row" id="inline-vs-block">
+						<aside class="row">
 							<h2>Inline vs Block</h2>
 							<p>
 								It is worth noting that there are two different default displays, that will impact where an item will appear on the page. By default elements will either have the property <span class="code">{ display: inline }</span> or <span class="code">{ display: block }</span>. The two most common elements that you will use that illustrate this are <span class="code">&lt;span&gt;</span> and <span class="code">&lt;div&gt;</span>.
@@ -119,18 +121,22 @@
 							In the example below if have created a class called relative, that moves the element 300px from the left of the static position, then applied it to one of the inline elements and one of the block elements.
 						</p>
 						
-						<!-- Codepen start -->
-						<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="mgzwyZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Relative Positioning">
-						<span>See the Pen <a href="https://codepen.io/logansruin/pen/mgzwyZ/">
-						Relative Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-						</p>
-						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-						<!-- Codepen end -->
+						<aside>
+							<!-- Codepen start -->
+							<div class="codepen">
+								<p class="codepen" data-height="325" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="mgzwyZ" style="height: 325px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Relative Positioning">
+								<span>See the Pen <a href="https://codepen.io/logansruin/pen/mgzwyZ/">
+								Relative Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
+								on <a href="https://codepen.io">CodePen</a>.</span>
+								</p>
+								<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+							</div>
+							<!-- Codepen end -->
 
-						<p>
-							Notice that the elements without <span class="code">class=”relative”</span> applied are still in the same static position unaffected by the change to the elements with relative positioning, even though one of the inline elements now overlaps the other.
-						</p>
+							<p>
+								Notice that the elements without <span class="code">class=”relative”</span> applied are still in the same static position unaffected by the change to the elements with relative positioning, even though one of the inline elements now overlaps the other.
+							</p>
+						</aside>
 					</div>
 				</div>
 				
@@ -150,19 +156,23 @@
 						<p>
 							In the example below if have created a class called absolute, that moves the element 300px from the left of the static position, then applied it to one of the inline elements and one of the block elements.
 						</p>
-						
-						<!-- Codepen start -->
-						<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="bJmRrB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Absolute Positioning">
-						<span>See the Pen <a href="https://codepen.io/logansruin/pen/bJmRrB/">
-						Absolute Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-						</p>
-						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-						<!-- Codepen end -->
 
-						<p>
-							As you can see the elements without class=”absolute” applied are no longer in the original static position. The inline element has slipped left into void made by the repositioned inline element. Less noticeably the block element with the class applied has shifted down another 10px which I assume has something to do with how vertical margins are applied differently when taken out of the normal flow.
-						</p>
+						<aside>
+							<!-- Codepen start -->
+							<div class="codepen">
+								<p class="codepen" data-height="325" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="bJmRrB" style="height: 325px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Absolute Positioning">
+								<span>See the Pen <a href="https://codepen.io/logansruin/pen/bJmRrB/">
+								Absolute Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
+								on <a href="https://codepen.io">CodePen</a>.</span>
+								</p>
+								<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+							</div>
+							<!-- Codepen end -->
+
+							<p>
+								As you can see the elements without class=”absolute” applied are no longer in the original static position. The inline element has slipped left into void made by the repositioned inline element. Less noticeably the block element with the class applied has shifted down another 10px which I assume has something to do with how vertical margins are applied differently when taken out of the normal flow.
+							</p>
+						</aside>
 					</div>
 				</div>
 
@@ -185,19 +195,25 @@
 						<p>
 							In the example below if have created a class called fixed, that moves the element 300px from the left of the static position, then applied it to one of the inline elements and one of the block elements.
 						</p>
+						<div>
+							
+						</div>
+						<aside>
+							<!-- Codepen start -->
+							<div class="codepen">
+								<p class="codepen" data-height="325" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="zXmzRJ" style="height: 325px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Fixed Positioning">
+								<span>See the Pen <a href="https://codepen.io/logansruin/pen/zXmzRJ/">
+								Fixed Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
+								on <a href="https://codepen.io">CodePen</a>.</span>
+								</p>
+								<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+							</div>
+							<!-- Codepen end -->
 
-						<!-- Codepen start -->
-						<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="zXmzRJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Fixed Positioning">
-						<span>See the Pen <a href="https://codepen.io/logansruin/pen/zXmzRJ/">
-						Fixed Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-						</p>
-						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-						<!-- Codepen end -->
-
-						<p>
-							Take note that when you scroll this example the elements with fixed positioning do not move, it is almost as if they are stuck to your screen, the other elements move freely as you would expect to happen in a normal document flow.
-						</p>
+							<p>
+								Take note that when you scroll this example the elements with fixed positioning do not move, it is almost as if they are stuck to your screen, the other elements move freely as you would expect to happen in a normal document flow.
+							</p>
+						</aside>
 					</div>
 				</div>						
 			</article>

@@ -308,6 +308,12 @@
 		color: var(--white-green);
 	}
 
+	aside{
+		margin: 1rem 0;
+		padding: 1rem;
+		background-color: #e7efda;
+	}
+
 	.blog-listing{
 		border-top: 2px solid var(--sea-water-blue);
 		border-bottom: 2px solid var(--white-green);
