@@ -148,22 +148,41 @@
 							<!-- Codepen end -->
 
 							<p>
-								Notice the the elements without class=”absolute” applied are no longer in the original static position. The inline element has slipped left into void made by the repositioned inline element. Less noticeably the block element with the class applied has shifted down another 10px which I assume has something to do with how vertical margins are applied differently when taken out of the normal flow.
+								As you can see the elements without class=”absolute” applied are no longer in the original static position. The inline element has slipped left into void made by the repositioned inline element. Less noticeably the block element with the class applied has shifted down another 10px which I assume has something to do with how vertical margins are applied differently when taken out of the normal flow.
 							</p>
 						</div>
+						<div id="fixed">
+							<h2>{ position: fixed }</h2>
+							<p>
+								The third and final type of positioning that I will review is fixed positioning. Fixed positioning is similar to absolute and relative positioning because you can give directions to move the element relative to its original static position in the normal flow. Also like absolute positioning, but different to relative, it takes the element out of the normal flow of the HTML which impacts the natural position of elements in the document flow.
+							</p>
+							<p>
+								It differs from both relative and absolute by fixing them into the allocated position on the screen.
+							</p>
+							<p>
+								To do this you need to first change you position to fixed:<br>
+								{ position: fixed; }
+							</p>
+							<p>
+								Just like with relative and absolute positioning you use the top, right, bottom and left properties to move the element to a new position.
+							</p>
+							<p>
+								In the example below if have created a class called fixed, that moves the element 300px from the left of the static position, then applied it to one of the inline elements and one of the block elements.
+							</p>
 
-						<h2>{ position: fixed }</h2>
-						<p id="fixed"></p>
+							<!-- Codepen start -->
+							<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="zXmzRJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Fixed Positioning">
+							<span>See the Pen <a href="https://codepen.io/logansruin/pen/zXmzRJ/">
+							Fixed Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
+							on <a href="https://codepen.io">CodePen</a>.</span>
+							</p>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+							<!-- Codepen end -->
 
-						<!-- Codepen start -->
-						<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="zXmzRJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Fixed Positioning">
-						<span>See the Pen <a href="https://codepen.io/logansruin/pen/zXmzRJ/">
-						Fixed Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-						</p>
-						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-						<!-- Codepen end -->
-
+							<p>
+								Take note that when you scroll this example the elements with fixed positioning do not move, it is almost as if they are stuck to your screen, the other elements move freely as you would expect to happen in a normal document flow.
+							</p>
+						</div>						
 					</article>
 				</div>
 			</div>
