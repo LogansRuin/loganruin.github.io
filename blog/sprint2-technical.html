@@ -49,16 +49,24 @@
 
 						<aside class="container">
 							<h2>Inline vs Block</h2>
+							<p>
+								It is worth noting that there are two different default displays, that will impact where an item will appear on the page. By default elements will either have the property [display: inline] or [display: block]. The two most common elements that you will use that illustrate this are &lt;span&gt; and &lt;div&gt;.
+							</p>
 							<div class="span6">
 								<h3>{ display: inline }</h3>
 								<p>
-									Inline elements are laid out horizontally in the normal flow. Examples of inline elements are:
-									<ul>
-										<li>span</li>
-										<li>img</li>
-										<li>a</li>
-										<li>strong</li>
-									</ul> 
+									&lt;span&gt; is an inline element. 
+								</p>
+								<blockquote>
+									<p>
+										“Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content” - [https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements]
+									</p>
+								</blockquote>
+								<p>
+									That means if you have a sentence like the one below, to make the words “brown fox” coloured brown you can place them in between &lt;span&gt; tags and apply a style to that &lt;span&gt; without removing breaking the flow of the sentence.
+								</p>
+								<p>
+									The quick <span id="brown-fox">brown fox</span> jumps over the lazy dog
 								</p>
 							</div>
 							<div class="span6">
