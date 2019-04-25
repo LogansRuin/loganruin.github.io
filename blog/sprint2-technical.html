@@ -95,7 +95,7 @@
 						<div id="relative-section">
 							<h2>{ position: relative }</h2>
 							<p>
-								The first type of positioning we will look at is relative positioning. Relative positioning allows you to position an element on the page, moving it relative to it original static position in the normal flow.
+								The first type of positioning we will look at is relative positioning. Relative positioning allows you to position an element on the page, moving it relative to its original static position in the normal flow.
 							</p>
 							<p>
 								To do this you need to first change you position to relative:<br>
@@ -122,18 +122,35 @@
 							</p>
 						</div>
 						
+						<div id="absolute">
+							<h2>{ position: absolute }</h2>
+							<p>
+								The second type of positioning is relative positioning. Absolute is similar to relative positioning as you are still moving an element relative to its original static position in the normal flow. How it differs is that when absolute takes the element out of the normal flow of the HTML which impacts the natural position of elements in the document flow.
+							</p>
+							<p>
+								To do this you need to first change you position to absolute:<br>
+								{ position: absolute; }
+							</p>
+							<p>
+								Just like with relative positioning you use the top, right, bottom and left properties to move the element to a new position.
+							</p>
+							<p>
+								In the example below if have created a class called absolute, that moves the element 300px from the left of the static position, then applied it to one of the inline elements and one of the block elements.
+							</p>
 
-						<h2>{ position: absolute }</h2>
-						<p id="absolute"></p>
+							<!-- Codepen start -->
+							<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="bJmRrB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Absolute Positioning">
+							<span>See the Pen <a href="https://codepen.io/logansruin/pen/bJmRrB/">
+							Absolute Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
+							on <a href="https://codepen.io">CodePen</a>.</span>
+							</p>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+							<!-- Codepen end -->
 
-						<!-- Codepen start -->
-						<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="bJmRrB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Absolute Positioning">
-						<span>See the Pen <a href="https://codepen.io/logansruin/pen/bJmRrB/">
-						Absolute Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-						</p>
-						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-						<!-- Codepen end -->
+							<p>
+								Notice the the elements without class=”absolute” applied are no longer in the original static position. The inline element has slipped left into void made by the repositioned inline element. Less noticeably the block element with the class applied has shifted down another 10px which I assume has something to do with how vertical margins are applied differently when taken out of the normal flow.
+							</p>
+						</div>
 
 						<h2>{ position: fixed }</h2>
 						<p id="fixed"></p>
