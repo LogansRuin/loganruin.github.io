@@ -3,6 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="sprint2-technical.css">
 		<title>Logans ruin blog</title>
 	</head>
 	<body>
@@ -69,16 +70,23 @@
 									The quick <span id="brown-fox">brown fox</span> jumps over the lazy dog
 								</p>
 							</div>
+
 							<div class="span6">
 								<h3>{ display: block }</h3>
 								<p>
-									Block elements are laid out horizontally in the normal flow. Examples of block elements are:
-									<ul>
-										<li>div</li>
-										<li>headings H1 to H6</li>
-										<li>p</li>
-										<li>blockquote</li>
-									</ul> 
+									&lt;div&gt; is a block element. 
+								</p>
+								<blockquote>
+									<p>
+										By default, a block-level element occupies the entire space of its parent element (container), thereby creating a "block." - [https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements]
+									</p>
+								</blockquote>
+								<p>
+									That means that if we use the same example from above, but wrap the words “brown fox” in &lt;div&gt; tags instead to colour them brown, we expect that they will break the flow of the sentence. 
+								</p>
+								<p>The quick <div id="brown-fox">brown fox</div> jumps over the lazy dog</p>
+								<p>
+									<em>A &lt;span&gt; tag is much more suitable in this situation, but you could change use css div { display: inline; } and find that it will no longer break the flow of the sentence even though you are still using a &lt;div&gt;.</em>
 								</p>
 							</div>
 						</aside>
