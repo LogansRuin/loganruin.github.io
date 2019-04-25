@@ -1,3 +1,8 @@
-#brown-fox{
-	color: brown;
-}
+/*Section specific*/
+	#relative-section, #fixed-section{
+		background-color: #eee;
+	}
+/*Content specific*/
+	#brown-fox{
+		color: brown;
+	
