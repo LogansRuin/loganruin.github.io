@@ -34,66 +34,68 @@
 						<p id="intro">
 							Positioning elements on a webpage can be a really challenging  concept to grasp, but it is super important if you want to be able to have elements that appear outside of the normal flow that is dictated by HTML.
 						</p>
-
-						<h2>{ position: static }</h2>
-						<p id="static">
-							When you create a website you will likely have an HTML file, with all of the content for your page, that links to a CSS file which provides the style. HTML has baked in styling to all elements including the default position property. As you have likely guessed the default in HTML is [position: static].
-						</p>
-						<!-- Codepen start -->
-						<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="vMVxXy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Static Positioning">
-						<span>See the Pen <a href="https://codepen.io/logansruin/pen/vMVxXy/">
-						Static Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
-						on <a href="https://codepen.io">CodePen</a>.</span>
-						</p>
-						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-						<!-- Codepen end -->
-
-						<aside class="container">
-							<h2>Inline vs Block</h2>
+						<div id="static">
+							<h2>{ position: static }</h2>
 							<p>
-								It is worth noting that there are two different default displays, that will impact where an item will appear on the page. By default elements will either have the property [display: inline] or [display: block]. The two most common elements that you will use that illustrate this are &lt;span&gt; and &lt;div&gt;.
+								When you create a website you will likely have an HTML file, with all of the content for your page, that links to a CSS file which provides the style. HTML has baked in styling to all elements including the default position property. As you have likely guessed the default in HTML is [position: static].
 							</p>
-							<div class="span6">
-								<h3>{ display: inline }</h3>
-								<p>
-									&lt;span&gt; is an inline element. 
-								</p>
-								<blockquote>
-									<p>
-										“Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content” - [https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements]
-									</p>
-								</blockquote>
-								<p>
-									That means if you have a sentence like the one below, to make the words “brown fox” coloured brown you can place them in between &lt;span&gt; tags and apply a style to that &lt;span&gt; without removing breaking the flow of the sentence.
-								</p>
-								<p>
-									The quick <span id="brown-fox">brown fox</span> jumps over the lazy dog
-								</p>
-							</div>
+							
+							<!-- Codepen start -->
+							<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="vMVxXy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Static Positioning">
+							<span>See the Pen <a href="https://codepen.io/logansruin/pen/vMVxXy/">
+							Static Positioning</a> by Jared (<a href="https://codepen.io/logansruin">@logansruin</a>)
+							on <a href="https://codepen.io">CodePen</a>.</span>
+							</p>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+							<!-- Codepen end -->
 
-							<div class="span6">
-								<h3>{ display: block }</h3>
+							<aside class="container">
+								<h2>Inline vs Block</h2>
 								<p>
-									&lt;div&gt; is a block element. 
+									It is worth noting that there are two different default displays, that will impact where an item will appear on the page. By default elements will either have the property [display: inline] or [display: block]. The two most common elements that you will use that illustrate this are &lt;span&gt; and &lt;div&gt;.
 								</p>
-								<blockquote>
+								<div class="span6">
+									<h3>{ display: inline }</h3>
 									<p>
-										By default, a block-level element occupies the entire space of its parent element (container), thereby creating a "block." - [https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements]
+										&lt;span&gt; is an inline element. 
 									</p>
-								</blockquote>
-								<p>
-									That means that if we use the same example from above, but wrap the words “brown fox” in &lt;div&gt; tags instead to colour them brown, we expect that they will break the flow of the sentence. 
-								</p>
-								<p>The quick <div id="brown-fox">brown fox</div> jumps over the lazy dog</p>
-								<p>
-									<em>A &lt;span&gt; tag is much more suitable in this situation, but you could change use css div { display: inline; } and find that it will no longer break the flow of the sentence even though you are still using a &lt;div&gt;.</em>
-								</p>
-							</div>
-						</aside>
+									<blockquote>
+										<p>
+											“Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content” - [https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements]
+										</p>
+									</blockquote>
+									<p>
+										That means if you have a sentence like the one below, to make the words “brown fox” coloured brown you can place them in between &lt;span&gt; tags and apply a style to that &lt;span&gt; without removing breaking the flow of the sentence.
+									</p>
+									<p>
+										The quick <span id="brown-fox">brown fox</span> jumps over the lazy dog
+									</p>
+								</div>
+
+								<div class="span6">
+									<h3>{ display: block }</h3>
+									<p>
+										&lt;div&gt; is a block element. 
+									</p>
+									<blockquote>
+										<p>
+											By default, a block-level element occupies the entire space of its parent element (container), thereby creating a "block." - [https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements]
+										</p>
+									</blockquote>
+									<p>
+										That means that if we use the same example from above, but wrap the words “brown fox” in &lt;div&gt; tags instead to colour them brown, we expect that they will break the flow of the sentence. 
+									</p>
+									<p>The quick <div id="brown-fox">brown fox</div> jumps over the lazy dog</p>
+									<p>
+										<em>A &lt;span&gt; tag is much more suitable in this situation, but you could change use css div { display: inline; } and find that it will no longer break the flow of the sentence even though you are still using a &lt;div&gt;.</em>
+									</p>
+								</div>
+							</aside>	
+						</div>
 						<div id="relative-section">
 							<h2>{ position: relative }</h2>
 							<p>
-								The  first type of positioning we will look at is relative positioning. Relative positioning allows you to position an element on the page, moving it relative to it original static position in the normal flow.
+								The first type of positioning we will look at is relative positioning. Relative positioning allows you to position an element on the page, moving it relative to it original static position in the normal flow.
 							</p>
 							<p>
 								To do this you need to first change you position to relative:<br>
