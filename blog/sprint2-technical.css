@@ -1,6 +1,8 @@
 /*Section specific*/
-	#relative-section, #fixed-section{
-		background-color: #eee;
+	.blog-section{
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+		border-bottom: 2px solid #e7efda;
 	}
 /*Content specific*/
 	#brown-fox{
