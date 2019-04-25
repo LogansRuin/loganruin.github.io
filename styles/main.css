@@ -262,7 +262,11 @@
 			color: var(--sea-water-blue);
 		}
 
-/*Home specific*/
+		.code{
+			font-family: monospace;
+		}
+
+/*Content specific*/
 	#title{
 		background-color: var(--primary-green);
 		min-height: 24rem;
@@ -303,7 +307,6 @@
 		border-bottom: 2px solid var(--white-green);
 		color: var(--white-green);
 	}
-
 
 	.blog-listing{
 		border-top: 2px solid var(--sea-water-blue);
@@ -353,8 +356,6 @@
 		right: 0;
 		margin: auto;
 	}
-
-/*Blog Specific*/
 
 /*Mobile*/
 	@media only screen and (max-width: 480px){
