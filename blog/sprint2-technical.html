@@ -31,12 +31,12 @@
 					<article class = "span12">
 						<h1>CSS Positioning</h1>
 						<p id="intro">
-							Positioning is super important to understand so lets try to simplify the rules.
+							Positioning elements on a webpage can be a really challenging  concept to grasp, but it is super important if you want to be able to have elements that appear outside of the normal flow that is dictated by HTML.
 						</p>
 
-						<h2>Static</h2>
+						<h2>{ position: static }</h2>
 						<p id="static">
-							The default position for any element is <span class = "code">postion: static<span>. When an element has no defined or inherited position property it will be displayed on the page in the order that it was marked up in HTML.
+							When you create a website you will likely have an HTML file, with all of the content for your page, that links to a CSS file which provides the style. HTML has baked in styling to all elements including the default position property. As you have likely guessed the default in HTML is [position: static].
 						</p>
 						<!-- Codepen start -->
 						<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="logansruin" data-slug-hash="vMVxXy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Static Positioning">
@@ -47,32 +47,35 @@
 						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 						<!-- Codepen end -->
 
-						<aside>
-							<h2>Inline VS Block</h2>
-							<h3>Inline:</h3>
-							<p>
-								Inline elements are laid out horizontally in the normal flow. Examples of inline elements are:
-								<ul>
-									<li>span</li>
-									<li>img</li>
-									<li>a</li>
-									<li>strong</li>
-								</ul> 
-							</p>
-
-							<h3>Block:</h3>
-							<p>
-								Block elements are laid out horizontally in the normal flow. Examples of block elements are:
-								<ul>
-									<li>div</li>
-									<li>headings H1 to H6</li>
-									<li>p</li>
-									<li>blockquote</li>
-								</ul> 
-							</p>
+						<aside class="container">
+							<h2>Inline vs Block</h2>
+							<div class="span6">
+								<h3>{ display: inline }</h3>
+								<p>
+									Inline elements are laid out horizontally in the normal flow. Examples of inline elements are:
+									<ul>
+										<li>span</li>
+										<li>img</li>
+										<li>a</li>
+										<li>strong</li>
+									</ul> 
+								</p>
+							</div>
+							<div class="span6">
+								<h3>{ display: block }</h3>
+								<p>
+									Block elements are laid out horizontally in the normal flow. Examples of block elements are:
+									<ul>
+										<li>div</li>
+										<li>headings H1 to H6</li>
+										<li>p</li>
+										<li>blockquote</li>
+									</ul> 
+								</p>
+							</div>
 						</aside>
 
-						<h2>Relative</h2>
+						<h2>{ position: relative }</h2>
 						<p id="relative"></p>
 						
 						<!-- Codepen start -->
@@ -84,7 +87,7 @@
 						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 						<!-- Codepen end -->
 
-						<h2>Absolute</h2>
+						<h2>{ position: absolute }</h2>
 						<p id="absolute"></p>
 
 						<!-- Codepen start -->
@@ -96,7 +99,7 @@
 						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 						<!-- Codepen end -->
 
-						<h2>Fixed</h2>
+						<h2>{ position: fixed }</h2>
 						<p id="fixed"></p>
 
 						<!-- Codepen start -->
@@ -114,7 +117,7 @@
 		</div>
 		<div class="full-container" id="footer">
 			<footer class="container">
-				<p>Logans Ruin aka Jared Tasker | © 2019</p>
+				<p>Logans ruin aka Jared Tasker | © 2019</p>
 			</footer>
 		</div>
 	</body>
