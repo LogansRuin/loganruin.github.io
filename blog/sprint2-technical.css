@@ -5,6 +5,17 @@
 		border-bottom: 2px solid #e7efda;
 	}
 
+	.card{
+		border-top: 2px solid var(--primary-blue);
+		border-bottom: 2px solid var(--primary-blue);
+		padding: 0.3rem;
+	}
+
+	.example{
+		background-color: var(--white-green);
+		padding: 0.2rem;
+	}
+
 /*Content specific*/
 	#inline-vs-block{
 		margin: 1rem 0;
