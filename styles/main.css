@@ -292,6 +292,7 @@
 
 	nav ul li{
 		display: inline;
+		color: var(--white-green);
 	}
 	
 	nav ul li a{
@@ -305,6 +306,10 @@
 	nav ul li a:hover{
 		background-color: var(--primary-green);
 		border-bottom: 2px solid var(--white-green);
+		color: var(--white-green);
+	}
+
+	nav ul li a:visited{
 		color: var(--white-green);
 	}
 
