@@ -297,7 +297,7 @@
 	
 	nav ul li a{
 		font-size: 1.1rem;
-		color: var(--sea-water-blue);
+		color: var(--white-green);
 		display: inline-block;
 		border-bottom: 2px solid var(--secondary-green);
 		padding: 0 10px;
