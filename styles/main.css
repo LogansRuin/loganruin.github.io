@@ -279,6 +279,7 @@
 	#main-body{
 		background-color: var(--white-green);
 		padding: 2rem 0;
+		min-height: 500px;
 	}
 
 	#nav{
