@@ -30,91 +30,97 @@
 				</nav>
 			</div>
 		<div class="full-container" id="main-body">
-			<article class="container">
-				
-				<h1>HTML, CSS & Javascript</h1>
-				
-				<h2>How do they relate?</h2>
-				
-				<p>Websites are like a good quality broom. There are a lot of brooms out there, but if you have just signed up for your first quidditch tournament you probably want the one that is best suited to your needs.</p>
-				<p>When making a broom you start off with the basic structure, the handle goes on top of the broom, followed by the base and finally the bristles. It is important that the broom is put together in the correct order, the bristles must be on the bottom, you can’t have the bristles attached to the handle, otherwise it will be a very uncomfortable ride.</p>
-				<p>HTML is the basic structure of a website, it is used to communicate the information on a web page. Like a broom it is super important for your HTML to be structured correctly, head at the top body after that and headings and other content marked up with the relevant tags.</p>
-				<p>Next comes the style of the broom. This what separates your practice brooms from the Nimbus 2000, or a Firebolt. The standard practice broom comes without any styling, it will do the job of getting you up in the air but it is missing that comfortable grip and the beautiful curves of the later models.</p>
-				<p>CSS is much the same as the style of a broom. You can have a website that works without any styling, but it is not going to feature on many people's lists of favorite websites to peruse. CSS enables us to apply colours, control sizes, and even apply different styles for different devices, so that you website always sparkles like Harry’s eyes when he first laid his sight on that Nimbus 2000 in the Philosopher’s stone.</p>
-				<p>Now that you have a beautiful looking broom you need to give it an enchantment. It is the enchantment the holds witch or wizard aloft as the straddle the broom. Enchantments can be simple flying enchantments which will work once the broom is being straddled or they can be important pieces of magic that respond to commands like when you hold your hand over the broom and command it with the word “up” the broom should rise in to your hand. They can also have bits of magic baked into them so that the broom knows what to do in the case of losing its rider, should it return home or look for its rider?</p>
-				<p>Javascript is this enchantment, javascript is what can take a static everyday website and bring to life. Javascript can be used react to a search bar, providing suggested search queries the user types or it can be used to calculate the time in different time zones around the world. Javascript is what makes a website interactive and gives the user a sense of control or power as they see their effect on page.</p>
-				
-				<h2>Control flow</h2>
-				
-				<p>Sticking with my broom example, let's say you purchased broom with a premium enchantment so that instead of returning home when you fell off your broom is equipped with a search and rescue enchantment.</p>
-				<p class="code">
-					if (flying AND rider == 0){<br>
-					<span class='tab'></span>while(rider == 0{<br>
-					<span class='tab'></span><span class='tab'></span>flyAroundInCircles();<br>
-					<span class='tab'></span><span class='tab'></span>if(riderSighted){<br>
-					<span class='tab'></span><span class='tab'></span><span class='tab'></span>sprialDownAndCatch();<br>
-					<span class='tab'></span><span class='tab'></span>}<br>
-					<span class='tab'></span>}<br>
-					}
-				</p>
-				<p>The example above checks for that case where the broom is flying but finds itself without a rider. Then the broom will continue to fly around in circles until it spots them and swoops down to catch the rider before they plummet to their death. Unfortunately if it does not find you it will continue flying around in circles into infinity or until someone else commandeers it.</p>
-				
-				<h2>The DOM</h2>
-				
-				<p>The DOM, or document object model, is a model that software can use to access the document, in our case a web page, and interact with it. The DOM is made up of a series of nodes that form the webpage, nodes can be elements, attributes, text content, comments to name a few.</p>
-				<p>Baked in to the DOM is a number of methods that allow us to interact with an element in the document. You can also access the DOM in the browser by using devtools Take a look it this sweet website rabbits.</p>
-				<h2>Accessing data: Arrays VS Objects</h2>
-				
-				<h3>Arrays</h3>
-				
-				<p>Arrays and objects can seem like the same thing. They are not. The main difference is that arrays have order and objects do not. </p>
-				
-				<h4>push() & pop()</h4>
-				
-				<p>An array works like a list, if you want to add something to a list you add it to the end. To add end of the list you can us push(); if you started with 9 things on your list the new item will be in the 10th position (indicated by 9 because 0 is a valid position [0,1,2,3,4,5,6,7,8,9]).</p>
-				<p>When you remove something from an array you can do it from the beginning or the end. It is easiest to remove an item from the end of the array, you can do this with the method pop().</p>
-				
-				<h4>shift() & unshift()</h4>
-				
-				<p>However, sometimes you want to remove an item from the beginning of a list. This is a little more labor intensive for the, if you wanted to do this with pop() you could write a loop that removes every item from the array adds it to another array temporarily until you get to the first item, remove it from the array and then repopulate the original array from the temporary one. Think about an array as a stack of books; to get to the first one (on the bottom) you need to remove each of the books from the top before you can get to the bottom book, once you have the bottom book you then have to restack the removed books on to the pile. This would be labour intensive to do, the program would take extra time to run the longer the list gets.</p>
-				<p>Fortunately there is a method , shift(), that will remove the item from the front of the array and then shift the position of each of the other items in the array. It is way faster and less labour intensive that writing two horribly inefficient loops.</p>
-				<p>Similarly you may want to add an item to the beginning of an array, to do this you can use unshift().</p>
-				
-				<h3>Objects</h3>
-				
-				<p>Unlike an array, objects have no order. Where an array is most like a stack of books, objects are more like Hermione Granger’s expandable bag, there is no order to it you can just add things in as you go. You would think that this makes it really difficult to access the data stored inside, if there is no order to an object how will you ever find the information you need?</p>
-				
-				<h4>Accio</h4>
-				
-				<p>Well, I think that I have watched way too much Harry Potter this week but the analogies are great so I will continue. In the deathly hallows when Hermione can’t find what she needs out of her expanding bag she can use the accio spell to summon the item she wants. Objects are kind of the same. Take a look at the object below.</p>
-				<p class="code">
-					var  expandingBag = {<br>
-					<span class='tab'></span>hairBrush: true,<br>
-					<span class='tab'></span>clothes: [‘pants’,’top’,’socks’],<br>
-					<span class='tab'></span>corcrux: [‘locket’]<br>
-					}
-				</p>
-				<p>
-					If we wanted to get the hairbrush property out of this bag all we would need to do is name the property with dot notation. Take a look below:
-				</p>
-				<p class="code">
-					var hairBrush = expandingBag.hairBrush;<br>
-					// hairBrush == true;
-				</p>
-				
-				<h3>Functions</h3>
-				<p>Finally functions are ways to store pieces of code that you may want to use several times over. You can create a function that will take arguments and do something with those arguments and spit out a result. There are a number of best practices to take into account when writing a function however I am only going to talk about the most important one. A function should do one thing.</p>
-				<p>If you follow this rule it will make code much easier to maintain and read. Functions that attempt to do more than one thing can get overly complicated and difficult to read.</p>
-				<p>
-					Functions are kind of like a spell take the example below:
-				</p>
-				<p class="code">
-					function transfigure( person, animal ) {<br>
-					<span class='tab'></span>//magic code that changes a person in to and animal<br>
-					<span class='tab'></span>var transfigured = person + “ now looks and sounds like a “ + animal;<br>
-					<span class='tab'></span>return transfigured;<br>
-					}
-				</p>
+			<article>
+				<div class="container">
+					<h1>HTML, CSS & Javascript</h1>
+				</div>
+			<img src="../images/hp-quidditch-banner.jpg">
+				<div class="container">
+					</div>
+					<h2>How do they relate?</h2>
+					
+					<p>Websites are like a good quality broom. There are a lot of brooms out there, but if you have just signed up for your first quidditch tournament you probably want the one that is best suited to your needs.</p>
+					<p>When making a broom you start off with the basic structure, the handle goes on top of the broom, followed by the base and finally the bristles. It is important that the broom is put together in the correct order, the bristles must be on the bottom, you can’t have the bristles attached to the handle, otherwise it will be a very uncomfortable ride.</p>
+					<p>HTML is the basic structure of a website, it is used to communicate the information on a web page. Like a broom it is super important for your HTML to be structured correctly, head at the top body after that and headings and other content marked up with the relevant tags.</p>
+					<p>Next comes the style of the broom. This what separates your practice brooms from the Nimbus 2000, or a Firebolt. The standard practice broom comes without any styling, it will do the job of getting you up in the air but it is missing that comfortable grip and the beautiful curves of the later models.</p>
+					<p>CSS is much the same as the style of a broom. You can have a website that works without any styling, but it is not going to feature on many people's lists of favorite websites to peruse. CSS enables us to apply colours, control sizes, and even apply different styles for different devices, so that you website always sparkles like Harry’s eyes when he first laid his sight on that Nimbus 2000 in the Philosopher’s stone.</p>
+					<p>Now that you have a beautiful looking broom you need to give it an enchantment. It is the enchantment the holds witch or wizard aloft as the straddle the broom. Enchantments can be simple flying enchantments which will work once the broom is being straddled or they can be important pieces of magic that respond to commands like when you hold your hand over the broom and command it with the word “up” the broom should rise in to your hand. They can also have bits of magic baked into them so that the broom knows what to do in the case of losing its rider, should it return home or look for its rider?</p>
+					<p>Javascript is this enchantment, javascript is what can take a static everyday website and bring to life. Javascript can be used react to a search bar, providing suggested search queries the user types or it can be used to calculate the time in different time zones around the world. Javascript is what makes a website interactive and gives the user a sense of control or power as they see their effect on page.</p>
+					
+					<h2>Control flow</h2>
+					
+					<p>Sticking with my broom example, let's say you purchased broom with a premium enchantment so that instead of returning home when you fell off your broom is equipped with a search and rescue enchantment.</p>
+					<p class="code">
+						if (flying AND rider == 0){<br>
+						<span class='tab'></span>while(rider == 0{<br>
+						<span class='tab'></span><span class='tab'></span>flyAroundInCircles();<br>
+						<span class='tab'></span><span class='tab'></span>if(riderSighted){<br>
+						<span class='tab'></span><span class='tab'></span><span class='tab'></span>sprialDownAndCatch();<br>
+						<span class='tab'></span><span class='tab'></span>}<br>
+						<span class='tab'></span>}<br>
+						}
+					</p>
+					<p>The example above checks for that case where the broom is flying but finds itself without a rider. Then the broom will continue to fly around in circles until it spots them and swoops down to catch the rider before they plummet to their death. Unfortunately if it does not find you it will continue flying around in circles into infinity or until someone else commandeers it.</p>
+					
+					<h2>The DOM</h2>
+					
+					<p>The DOM, or document object model, is a model that software can use to access the document, in our case a web page, and interact with it. The DOM is made up of a series of nodes that form the webpage, nodes can be elements, attributes, text content, comments to name a few.</p>
+					<p>Baked in to the DOM is a number of methods that allow us to interact with an element in the document. You can also access the DOM in the browser by using devtools Take a look it this sweet website rabbits.</p>
+
+					<h2>Accessing data: Arrays VS Objects</h2>
+					
+					<h3>Arrays</h3>
+					
+					<p>Arrays and objects can seem like the same thing. They are not. The main difference is that arrays have order and objects do not. </p>
+					
+					<h4>push() & pop()</h4>
+					
+					<p>An array works like a list, if you want to add something to a list you add it to the end. To add end of the list you can us push(); if you started with 9 things on your list the new item will be in the 10th position (indicated by 9 because 0 is a valid position [0,1,2,3,4,5,6,7,8,9]).</p>
+					<p>When you remove something from an array you can do it from the beginning or the end. It is easiest to remove an item from the end of the array, you can do this with the method pop().</p>
+					
+					<h4>shift() & unshift()</h4>
+					
+					<p>However, sometimes you want to remove an item from the beginning of a list. This is a little more labor intensive for the, if you wanted to do this with pop() you could write a loop that removes every item from the array adds it to another array temporarily until you get to the first item, remove it from the array and then repopulate the original array from the temporary one. Think about an array as a stack of books; to get to the first one (on the bottom) you need to remove each of the books from the top before you can get to the bottom book, once you have the bottom book you then have to restack the removed books on to the pile. This would be labour intensive to do, the program would take extra time to run the longer the list gets.</p>
+					<p>Fortunately there is a method , shift(), that will remove the item from the front of the array and then shift the position of each of the other items in the array. It is way faster and less labour intensive that writing two horribly inefficient loops.</p>
+					<p>Similarly you may want to add an item to the beginning of an array, to do this you can use unshift().</p>
+					
+					<h3>Objects</h3>
+					
+					<p>Unlike an array, objects have no order. Where an array is most like a stack of books, objects are more like Hermione Granger’s expandable bag, there is no order to it you can just add things in as you go. You would think that this makes it really difficult to access the data stored inside, if there is no order to an object how will you ever find the information you need?</p>
+					
+					<h4>Accio</h4>
+					
+					<p>Well, I think that I have watched way too much Harry Potter this week but the analogies are great so I will continue. In the deathly hallows when Hermione can’t find what she needs out of her expanding bag she can use the accio spell to summon the item she wants. Objects are kind of the same. Take a look at the object below.</p>
+					<p class="code">
+						var  expandingBag = {<br>
+						<span class='tab'></span>hairBrush: true,<br>
+						<span class='tab'></span>clothes: [‘pants’,’top’,’socks’],<br>
+						<span class='tab'></span>corcrux: [‘locket’]<br>
+						}
+					</p>
+					<p>
+						If we wanted to get the hairbrush property out of this bag all we would need to do is name the property with dot notation. Take a look below:
+					</p>
+					<p class="code">
+						var hairBrush = expandingBag.hairBrush;<br>
+						// hairBrush == true;
+					</p>
+					
+					<h3>Functions</h3>
+					<p>Finally functions are ways to store pieces of code that you may want to use several times over. You can create a function that will take arguments and do something with those arguments and spit out a result. There are a number of best practices to take into account when writing a function however I am only going to talk about the most important one. A function should do one thing.</p>
+					<p>If you follow this rule it will make code much easier to maintain and read. Functions that attempt to do more than one thing can get overly complicated and difficult to read.</p>
+					<p>
+						Functions are kind of like a spell take the example below:
+					</p>
+					<p class="code">
+						function transfigure( person, animal ) {<br>
+						<span class='tab'></span>//magic code that changes a person in to and animal<br>
+						<span class='tab'></span>var transfigured = person + “ now looks and sounds like a “ + animal;<br>
+						<span class='tab'></span>return transfigured;<br>
+						}
+					</p>
+				</div>
+					
 			</article>
 		</div>
 		<div class="full-container" id="footer">
