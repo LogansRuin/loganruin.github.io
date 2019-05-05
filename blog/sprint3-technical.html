@@ -47,14 +47,14 @@
 				<h2>Control flow</h2>
 				
 				<p>Sticking with my broom example, let's say you purchased broom with a premium enchantment so that instead of returning home when you fell off your broom is equipped with a search and rescue enchantment.</p>
-				<p>
+				<p class="code">
 					if (flying AND rider == 0){<br>
-					    while(rider == 0{<br>
-					        flyAroundInCircles();<br>
-							if(riderSighted){<br>
-								sprialDownAndCatch();<br>
-							}<br>
-						}<br>
+					<span class='tab'></span>while(rider == 0{<br>
+					<span class='tab'></span><span class='tab'></span>flyAroundInCircles();<br>
+					<span class='tab'></span><span class='tab'></span>if(riderSighted){<br>
+					<span class='tab'></span><span class='tab'></span><span class='tab'></span>sprialDownAndCatch();<br>
+					<span class='tab'></span><span class='tab'></span>}<br>
+					<span class='tab'></span>}<br>
 					}
 				</p>
 				<p>The example above checks for that case where the broom is flying but finds itself without a rider. Then the broom will continue to fly around in circles until it spots them and swoops down to catch the rider before they plummet to their death. Unfortunately if it does not find you it will continue flying around in circles into infinity or until someone else commandeers it.</p>
@@ -87,17 +87,18 @@
 				<h4>Accio</h4>
 				
 				<p>Well, I think that I have watched way too much Harry Potter this week but the analogies are great so I will continue. In the deathly hallows when Hermione can’t find what she needs out of her expanding bag she can use the accio spell to summon the item she wants. Objects are kind of the same. Take a look at the object below.</p>
-				<p>
-					Var  expandingBag = {<br>
-						hairBrush: true,<br>
-						Clothes: [‘pants’,’top’,’socks’],<br>
-						Horcrux: [‘locket’]<br>
+				<p class="code">
+					var  expandingBag = {<br>
+					<span class='tab'></span>hairBrush: true,<br>
+					<span class='tab'></span>clothes: [‘pants’,’top’,’socks’],<br>
+					<span class='tab'></span>corcrux: [‘locket’]<br>
 					}
 				</p>
 				<p>
-					If we wanted to get the hairbrush property out of this bag all we would need to do is name the property with dot notation. Take a look below:<br>
-					<br>
-					Var hairBrush = expandingBag.hairBrush;<br>
+					If we wanted to get the hairbrush property out of this bag all we would need to do is name the property with dot notation. Take a look below:
+				</p>
+				<p class="code">
+					var hairBrush = expandingBag.hairBrush;<br>
 					// hairBrush == true;
 				</p>
 				
@@ -105,12 +106,13 @@
 				<p>Finally functions are ways to store pieces of code that you may want to use several times over. You can create a function that will take arguments and do something with those arguments and spit out a result. There are a number of best practices to take into account when writing a function however I am only going to talk about the most important one. A function should do one thing.</p>
 				<p>If you follow this rule it will make code much easier to maintain and read. Functions that attempt to do more than one thing can get overly complicated and difficult to read.</p>
 				<p>
-					Functions are kind of like a spell take the example below:<br>
-					<br>
-					Function transfigure(person, animal){<br>
-						//magic code that changes a person in to and animal<br>
-						var transfigured = person + “ now looks and sounds like a “ + animal;<br>
-						return transfigured;<br>
+					Functions are kind of like a spell take the example below:
+				</p>
+				<p class="code">
+					function transfigure( person, animal ) {<br>
+					<span class='tab'></span>//magic code that changes a person in to and animal<br>
+					<span class='tab'></span>var transfigured = person + “ now looks and sounds like a “ + animal;<br>
+					<span class='tab'></span>return transfigured;<br>
 					}
 				</p>
 			</article>

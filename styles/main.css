@@ -376,6 +376,10 @@
 		right: 0;
 		margin: auto;
 	}
+	.tab{
+		display: inline-block;
+		width: 2rem;
+	}
 
 /*Mobile*/
 	@media only screen and (max-width: 480px){
