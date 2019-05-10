@@ -360,6 +360,11 @@
 		color: var(--primary-blue);	
 	}
 
+	.word-wrap{
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+	}
+
 	#footer{
 		height: 3rem;
 		border-top: 1px solid var(--secondary-green);
