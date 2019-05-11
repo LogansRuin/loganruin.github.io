@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../styles/main.css">
+		<title>Javascript Katas | Logans ruin blog</title>
+	</head>
+	<body>
+
+		<header class="full-container" id="title">
+			<h1>Logans ruin</h1>
+			<p>an occasional blog</p>
+		</header>
+			<div class="full-container" id="nav">
+				<nav class="container">
+					<ul>
+						<li>
+							<a href="../index.html">latest</a>
+						</li>
+						<li>|</li>
+						<li>
+							<a href="bio-jared-tasker.html">about me</a>
+						</li>
+						<li>|</li>
+						<li>
+							<a href="../archive.html">archive</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		<div class="full-container" id="main-body">
+			<article>
+				<div class="container">
+					<div class="row">
+						<div class="span12">
+							<h1>Javascript Katas</h1>
+						</div>
+					</div>
+				</div>
+				<img src="" alt="">
+				<div class="container">
+						<div class="row">
+							<div class="span12">
+							
+							<h2>Becoming a master</h2>
+							<p>
+								I really loved this idea of giving us task that would challenge, whilst give a tasks that would require some amount of repetition making us stronger developers. Using the word Kata, really made me understand the value of the of each task, I got to the end of the task not quite a master but feeling like I exercised my skills and learnt new ways to approach problems.
+							</p>
+							
+							<h3>A time I faced a problem</h3>
+							<p>
+								This week we were given a series of problems to solve. Before we got to solving problems we were introduced to the concept of test driven development [TDD]. Effectively when you are writing a piece of software one approach to ensure that you solve the intended problem is to come up with a series of tests before you even start forming a solution. The advantage of this that when it comes time to build your solution, in our case in the form of javascript functions, you are able to see if it passes the tests along the way. If it does pass, you carry onto the next step; if it does not, you rework solution until it does pass.
+							</p>
+							<p>
+								The problem that I faced this week was not paying attention to the instructions and getting straight to coding a solution rather than planning it out first. I found myself in a situation twice where I had built an elegant solution only to find that it did not pass the test, as I had solve my own problem and not what was required of me. Also when I was reading the instructions I failed to see some of the key words like `JOIN`. Instead including the javascript method `join()` to join multiple sets characters together, I first used a loop, which did past test but was not the purpose of the exercise. Thus I almost missed out on a valuable learning opportunity.
+							</p>
+
+							<h3>Solving problems elegantly</h3>
+							<p>
+								One I was particularly interested to get experience with and look forward to using it more was arrow functions. These functions defined using `=>` rather than the keyword `function`. When had come across this in the past I did not understand why it was necessary, but then when I learnt how to use `array.prototype.filter()` which requires you pass it a function, I could see how helpful it became.
+								<br>
+								<br>
+								This:
+							</p>
+							<p>
+								<code>var result = words.filter(word => word.length > 6);</code>
+							</p>
+							<p>
+								Is the same as this:
+							</p>
+							<p>
+								<code>
+									function filterMe(word){<br>
+									<span class="tab"></span>return word.length > 6;<br>
+									}<br>
+									<br>
+									var result = words.filter(filterMe);
+								</code>
+							</p>
+
+							<h2>Reflections on problem solving techniques</h2>
+							<p>
+								Pseudocode is key, as well as using console.log() liberally to see what should be happening.
+							</p>
+
+							<h3>console.log()</h3>
+							<p>
+								One of the things I found really helpful in this Sprint was to console.log() the variable expected in the function so that I could see what test data was being submitted. For instance on the concatMyArray section you start with this:
+							</p>
+							<p>
+								<code>
+									function concatMyArray (arr){<br>
+									<br>
+									}
+								</code>
+							</p>
+							<p>
+								And if you run the program you get this:<br>
+								<code>
+									1: failed - concatMyArray should return a string.<br>
+									<br>
+									<br>
+									Expected:<br>
+									"string"<br>
+									<br>
+									<br>
+									Received:<br>
+									"undefined"
+								</code>
+							</p>
+							<p>
+								Which effectively means, you failed the first test your function should return a string. So then before I started formulating a solution I needed to know what data was being passed into the function. So I would add console.log(arr), which will just log the data  passed into the function, `arr`, to the console.<br>
+								<code>
+									function concatMyArray (arr){<br>
+									<span class='tab'></span>console.log(arr)<br>
+									}
+								</code>
+							</p>
+							<p>
+								Which had the following result:<br>
+								<code>
+									[ 'hi' ]<br>
+									[ 'zoom', 'zoom', '!' ]<br>
+									[ 'super', 'cali', 'fragi', 'listic', 'expiali', 'docious' ]<br>
+									1: failed - concatMyArray should return a string.<br>
+									<br>
+									<br>
+									Expected:<br>
+									"string"<br>
+									<br>
+									<br>
+									Received:<br>
+									"undefined"
+								</code>
+							</p>
+							<p>
+								I learnt the following things:
+								<ul>
+									<li>
+										First this told me that the information being passed into the function was an array, hence the name `arr`
+									</li>
+									<li>
+										Three tests where being run, as there were three arrays, and this function only takes one argument
+									</li>
+									<li>
+										The first test had an array with only one thing in it, so my code would need to be able to return that value without anything else added to it
+									</li>
+									<li>
+										The second test had two values in the array and the third test multiple, so my solution would need to be able to add multiple values together.
+									</li>
+									<li>
+										Finally the first failed test message concatMyArray should return a string told me that I needed to return a string and not an array
+									</li>
+								</ul>
+								All these findings just from one little <code>console.log()</code>. 
+							</p>
+
+							<h3>Pseudocode</h3>
+							<p>
+								Pseudocode is a great way to solve the logic of a problem before you actually go ahead and build it. I personally find it a bit tedious to do, however when working with a complex piece of code it is an invaluable tool.
+							</p>
+							<p>
+								Depending on the complexity of the problem I am solving, I will first draw / write out my idea for the logic on a piece of paper, then I will convert that to step by step commented instructions in my function before I actually start writing code.
+							</p>
+							<p>
+								For example my pseudocode for capitalize looked like this:<br>
+								<code>
+									function capitalize (str){<br>
+									<span class='tab'></span>//split up words in to an array<br>
+									<br>
+									<span class='tab'></span>//Get the first letter of the word and capitalize it<br>
+									<br>
+									<span class='tab'></span>//Add first letter to the beginning to the word again<br>
+									<br>
+									<span class='tab'></span>//Return the words joined together in a sentence<br>
+									<br>
+									}
+								</code>
+							</p>
+							<p>
+								What this enables me to do is focus on each step, and refactor my approach as I go. So I might start off like this:<br>
+								<code>
+									function capitalize (str){<br>
+									<span class='tab'></span>//split up words in to an array<br>
+									<span class='tab'></span>var words = str.split(" ");<br>
+									<br>
+									<span class='tab'></span>//Get the first letter of the word and capitalize it<br>
+									<br>
+									<span class='tab'></span>//Add first letter to the beginning to the word again<br>
+									<br>
+									<span class='tab'></span>//Return the words joined together in a sentence<br>
+									<br>
+									}
+								</code>
+							</p>
+							<p>
+								Then I realised that I am supposed to use map, so I can combine the next two steps into one process:
+								<code>
+									function capitalize (str){<br>
+									<span class='tab'></span>//split up words in to an array<br>
+									<span class='tab'></span>var words = str.split(" ");<br>
+									<br>
+									<span class='tab'></span>//Use map to capitalize the first letter of each word and then add it to the remaining part<br>
+									<span class='tab'></span>var capWords = words.map(word => word[0].toUpperCase() + word.slice(1));<br>
+									<br>
+									<span class='tab'></span>//Return the words joined together in a sentence<br>
+									<br>
+									}
+								</code>
+							</p>
+							<p>
+								You will notice that I altered my comment when combined the steps so that I would know what is doing when I came back to write this blog. Finally all that is left to do is return the sentence at the end:
+							</p>
+								<code>
+									function capitalize (str){<br>
+									<span class='tab'></span>//split up words in to an array<br>
+									<span class='tab'></span>var words = str.split(" ");<br>
+									<br>
+									<span class='tab'></span>//Use map to capitalize the first letter of each word and then add it to the remaining part<br>
+									<span class='tab'></span>var capWords = words.map(word => word[0].toUpperCase() + word.slice(1));<br>
+									<br>
+									<span class='tab'></span>//Join capitalized words with a space<br>
+									<span class='tab'></span>var sentence = capWords.join(' ');<br>
+									<br>
+									<span class='tab'></span>return sentence;<br>
+									}
+								</code>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<div class="full-container" id="footer">
+			<footer class="container">
+				<p>Logans ruin aka Jared Tasker | © 2019</p>
+			</footer>
+		</div>
+	</body>
+</html>
