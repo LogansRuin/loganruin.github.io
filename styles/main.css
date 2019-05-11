@@ -192,7 +192,7 @@
 			margin-top: 2rem;
 			margin-bottom: 1rem;
 			font-weight: 400;
-			font-size: 4rem;
+			font-size: 3rem;
 			color: var(--primary-blue);
 		}
 
@@ -200,7 +200,7 @@
 			margin-top: 2rem;
 			margin-bottom: 1rem;
 			font-weight: 400;
-			font-size: 3rem;
+			font-size: 2.5rem;
 			color: var(--primary-blue);
 		}
 
@@ -245,7 +245,7 @@
 
 		#title>h1{
 			font-weight: 700;
-			font-size: 6rem;
+			font-size: 5rem;
 			color: var(--white-green);
 		}
 
