@@ -380,9 +380,19 @@
 		right: 0;
 		margin: auto;
 	}
+	
 	.tab{
 		display: inline-block;
 		width: 2rem;
+	}
+
+	.code-block{
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding: 1rem;
+		background-color: #222;
+		color: #ddd;
 	}
 
 /*Mobile*/

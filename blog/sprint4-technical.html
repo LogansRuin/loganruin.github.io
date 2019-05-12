@@ -64,13 +64,15 @@
 								This:
 							</p>
 							<p>
-								<code>var result = words.filter(word => word.length > 6);</code>
+								<code class="code-block">
+									var result = words.filter(word => word.length > 6);
+								</code>
 							</p>
 							<p>
 								Is the same as this:
 							</p>
 							<p>
-								<code>
+								<code class="code-block">
 									function filterMe(word){<br>
 									<span class="tab"></span>return word.length > 6;<br>
 									}<br>
@@ -89,7 +91,7 @@
 								One of the things I found really helpful in this Sprint was to console.log() the variable expected in the function so that I could see what test data was being submitted. For instance on the concatMyArray section you start with this:
 							</p>
 							<p>
-								<code>
+								<code class="code-block">
 									function concatMyArray (arr){<br>
 									<br>
 									}
@@ -97,7 +99,7 @@
 							</p>
 							<p>
 								And if you run the program you get this:<br>
-								<code>
+								<code class="code-block">
 									1: failed - concatMyArray should return a string.<br>
 									<br>
 									<br>
@@ -111,15 +113,15 @@
 							</p>
 							<p>
 								Which effectively means, you failed the first test your function should return a string. So then before I started formulating a solution I needed to know what data was being passed into the function. So I would add console.log(arr), which will just log the data  passed into the function, `arr`, to the console.<br>
-								<code>
+								<code class="code-block">
 									function concatMyArray (arr){<br>
 									<span class='tab'></span>console.log(arr)<br>
 									}
 								</code>
 							</p>
 							<p>
-								Which had the following result:<br>
-								<code>
+								Which had the following result:
+								<code class="code-block">
 									[ 'hi' ]<br>
 									[ 'zoom', 'zoom', '!' ]<br>
 									[ 'super', 'cali', 'fragi', 'listic', 'expiali', 'docious' ]<br>
@@ -164,8 +166,8 @@
 								Depending on the complexity of the problem I am solving, I will first draw / write out my idea for the logic on a piece of paper, then I will convert that to step by step commented instructions in my function before I actually start writing code.
 							</p>
 							<p>
-								For example my pseudocode for capitalize looked like this:<br>
-								<code>
+								For example my pseudocode for capitalize looked like this:
+								<code class="code-block">
 									function capitalize (str){<br>
 									<span class='tab'></span>//split up words in to an array<br>
 									<br>
@@ -179,8 +181,8 @@
 								</code>
 							</p>
 							<p>
-								What this enables me to do is focus on each step, and refactor my approach as I go. So I might start off like this:<br>
-								<code>
+								What this enables me to do is focus on each step, and refactor my approach as I go. So I might start off like this:
+								<code class="code-block">
 									function capitalize (str){<br>
 									<span class='tab'></span>//split up words in to an array<br>
 									<span class='tab'></span>var words = str.split(" ");<br>
@@ -196,7 +198,7 @@
 							</p>
 							<p>
 								Then I realised that I am supposed to use map, so I can combine the next two steps into one process:
-								<code>
+								<code class="code-block">
 									function capitalize (str){<br>
 									<span class='tab'></span>//split up words in to an array<br>
 									<span class='tab'></span>var words = str.split(" ");<br>
@@ -212,7 +214,7 @@
 							<p>
 								You will notice that I altered my comment when combined the steps so that I would know what is doing when I came back to write this blog. Finally all that is left to do is return the sentence at the end:
 							</p>
-								<code>
+								<code class="code-block">
 									function capitalize (str){<br>
 									<span class='tab'></span>//split up words in to an array<br>
 									<span class='tab'></span>var words = str.split(" ");<br>
