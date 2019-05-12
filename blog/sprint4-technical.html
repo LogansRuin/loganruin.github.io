@@ -50,15 +50,15 @@
 							
 							<h3>A time I faced a problem</h3>
 							<p>
-								This week we were given a series of problems to solve. Before we got to solving problems we were introduced to the concept of test driven development [TDD]. Effectively when you are writing a piece of software one approach to ensure that you solve the intended problem is to come up with a series of tests before you even start forming a solution. The advantage of this that when it comes time to build your solution, in our case in the form of javascript functions, you are able to see if it passes the tests along the way. If it does pass, you carry onto the next step; if it does not, you rework solution until it does pass.
+								This week we were given a series of problems to solve. Before we got to solving problems we were introduced to the concept of test driven development <abbr title="test driven development">TDD</abbr>. Effectively when you are writing a piece of software one approach to ensure that you solve the intended problem is to come up with a series of tests before you even start forming a solution. The advantage of this that when it comes time to build your solution, in our case in the form of javascript functions, you are able to see if it passes the tests along the way. If it does pass, you carry onto the next step; if it does not, you rework solution until it does pass.
 							</p>
 							<p>
-								The problem that I faced this week was not paying attention to the instructions and getting straight to coding a solution rather than planning it out first. I found myself in a situation twice where I had built an elegant solution only to find that it did not pass the test, as I had solve my own problem and not what was required of me. Also when I was reading the instructions I failed to see some of the key words like `JOIN`. Instead including the javascript method `join()` to join multiple sets characters together, I first used a loop, which did past test but was not the purpose of the exercise. Thus I almost missed out on a valuable learning opportunity.
+								The problem that I faced this week was not paying attention to the instructions and getting straight to coding a solution rather than planning it out first. I found myself in a situation twice where I had built an elegant solution only to find that it did not pass the test, as I had solve my own problem and not what was required of me. Also when I was reading the instructions I failed to see some of the key words like <em>JOIN</em>. Instead including the javascript method <code>join()</code> to join multiple sets characters together, I first used a loop, which did past test but was not the purpose of the exercise. Thus I almost missed out on a valuable learning opportunity.
 							</p>
 
 							<h3>Solving problems elegantly</h3>
 							<p>
-								One I was particularly interested to get experience with and look forward to using it more was arrow functions. These functions defined using `=>` rather than the keyword `function`. When had come across this in the past I did not understand why it was necessary, but then when I learnt how to use `array.prototype.filter()` which requires you pass it a function, I could see how helpful it became.
+								One I was particularly interested to get experience with and look forward to using it more was arrow functions. These functions defined using <code>=></code> rather than the keyword <code>function</code>. When had come across this in the past I did not understand why it was necessary, but then when I learnt how to use <code>array.prototype.filter()</code> which requires you pass it a function, I could see how helpful it became.
 								<br>
 								<br>
 								This:
@@ -88,7 +88,7 @@
 
 							<h3>console.log()</h3>
 							<p>
-								One of the things I found really helpful in this Sprint was to console.log() the variable expected in the function so that I could see what test data was being submitted. For instance on the concatMyArray section you start with this:
+								One of the things I found really helpful in this Sprint was to <code>console.log()</code> the variable expected in the function so that I could see what test data was being submitted. For instance on the concatMyArray section you start with this:
 							</p>
 							<p>
 								<code class="code-block">
@@ -112,7 +112,7 @@
 								</code>
 							</p>
 							<p>
-								Which effectively means, you failed the first test your function should return a string. So then before I started formulating a solution I needed to know what data was being passed into the function. So I would add console.log(arr), which will just log the data  passed into the function, `arr`, to the console.<br>
+								Which effectively means, you failed the first test your function should return a string. So then before I started formulating a solution I needed to know what data was being passed into the function. So I would add <code>console.log(arr)</code>, which will just log the data  passed into the function, <code>arr</code>, to the console.<br>
 								<code class="code-block">
 									function concatMyArray (arr){<br>
 									<span class='tab'></span>console.log(arr)<br>
@@ -140,7 +140,7 @@
 								I learnt the following things:
 								<ul>
 									<li>
-										First this told me that the information being passed into the function was an array, hence the name `arr`
+										First this told me that the information being passed into the function was an array, hence the name <code>arr</code>
 									</li>
 									<li>
 										Three tests where being run, as there were three arrays, and this function only takes one argument
