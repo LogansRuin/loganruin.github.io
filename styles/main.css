@@ -186,6 +186,7 @@
 
 		h1, h2, h3, h4, h5, h6{
 			font-family: 'Arvo', serif;
+			hyphens: auto; 
 		}
 
 		h1{
@@ -356,11 +357,6 @@
 	.subtitle-label{
 		font-weight: 400;
 		color: var(--primary-blue);	
-	}
-
-	.word-wrap{
-		word-wrap: break-word;
-		overflow-wrap: break-word;
 	}
 
 	#footer{
