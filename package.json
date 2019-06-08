@@ -4,7 +4,7 @@
   "description": "Jareds EDA experience in blog form",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchAll --verbose",
     "start": "node ."
   },
   "repository": {
