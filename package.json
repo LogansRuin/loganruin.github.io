@@ -1,0 +1,30 @@
+{
+  "name": "logansruin.github.io",
+  "version": "1.0.0",
+  "description": "Jareds EDA experience in blog form",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LogansRuin/loganruin.github.io.git"
+  },
+  "keywords": [],
+  "author": "Jared Tasker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LogansRuin/loganruin.github.io/issues"
+  },
+  "homepage": "https://github.com/LogansRuin/loganruin.github.io#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
+  }
+}
